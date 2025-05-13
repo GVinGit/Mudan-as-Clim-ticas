@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-image: url('ceu-azul.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <header>
+        <div class="rain">
+          <!-- Generate raindrops -->
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+          <div class="raindrop"></div>
+        </div>
+        <h1>Mudanças Climáticas</h1>
+        <h3>Um problema que afeta o presente e o futuro</h3>
+      </header>
+
+    <div class="sol">
+      <h1>Cadastro</h1>
+    </div>
+
+    <form id="form">
+      <div class="input-wrapper">
+        <i class="fas fa-user"></i>
+        <input type="text" id="nome" placeholder="Digite o nome do usuário" required />
+      </div>
+      <br>
+      <div class="input-wrapper">
+        <i class="fas fa fa-envelope"></i>
+        <input type="email" id="email" placeholder="Digite seu email" required />
+      </div>
+      <br>
+      <div class="input-wrapper">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="senha" placeholder="Digite sua senha" required />
+      </div>
+      <p>ja tem conta? <a href="inicio.html" target="_blank">entre aqui</a></p><br>
+        <br>
+        <br>
+      <button type="submit">Enviar</button>
+    </form>
+
+    
+
+    <h2>informaçoes</h2>
+    <div class="id">
+    <ul id="clima"></ul>
+    </div>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
