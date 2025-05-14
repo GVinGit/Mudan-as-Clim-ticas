@@ -271,8 +271,7 @@
         <p>O clima do nosso planeta está mudando rapidamente. Tempestades extremas, secas prolongadas, derretimento de geleiras e aumento do nível dos mares são apenas alguns dos sintomas de uma crise global.</p>
         <p>Essas mudanças afetam a agricultura, a biodiversidade, a saúde humana e a economia. E elas são causadas, em grande parte, pelas atividades humanas.</p>
         
-        <button onclick="showCausaEfeito()">Entenda Causas e Efeitos</button>
-
+        <button onclick="showCausaEfeito(); fecharCausaEfeito();">Entenda Causas e Efeitos</button>
         <div class="causa-efeito" id="causaEfeito">
         <h2>Causas</h2>
         
@@ -360,6 +359,15 @@
         function showCausaEfeito() {
         document.getElementById('causaEfeito').style.display = 'block';
         }
+
+        function showCausaEfeito() {
+    const causaEfeito = document.getElementById('causaEfeito');
+    if (causaEfeito.style.display === 'block') {
+    causaEfeito.style.display = 'none';
+    } else {
+     causaEfeito.style.display = 'block';
+    }
+}
     </script>
     </body>
     </html>
